@@ -10,7 +10,7 @@ import java.util.List;
 // E.g. Integer 128 -> [1,2,3]
 // E.g. Integer -128 -> [-1, 2, 8]
 @NoArgsConstructor(access = AccessLevel.PRIVATE)
-public class IntegerIncrementor {
+public class IntegerIncrementer {
   /**
    * Perform increment by 1 to arbitrary-precision positive/negative number
    *

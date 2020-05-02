@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class IntegerIncrementorTest {
+public class IntegerIncrementerTest {
 
   @Before
   public void setUp() throws Exception {}
@@ -29,13 +29,13 @@ public class IntegerIncrementorTest {
           }
         };
 
-    IntegerIncrementor.plusOne(number1);
+    IntegerIncrementer.plusOne(number1);
     Assert.assertEquals(Arrays.asList(1, 2, 9), number1);
 
-    IntegerIncrementor.plusOne(number2);
+    IntegerIncrementer.plusOne(number2);
     Assert.assertEquals(Arrays.asList(1, 3, 0), number2);
 
-    IntegerIncrementor.plusOne(number3);
+    IntegerIncrementer.plusOne(number3);
     Assert.assertEquals(Arrays.asList(1, 0, 0), number3);
   }
 
@@ -52,13 +52,13 @@ public class IntegerIncrementorTest {
           }
         };
 
-    IntegerIncrementor.plusOne(number1);
+    IntegerIncrementer.plusOne(number1);
     Assert.assertEquals(Arrays.asList(-1, 2, 7), number1);
 
-    IntegerIncrementor.plusOne(number2);
+    IntegerIncrementer.plusOne(number2);
     Assert.assertEquals(Arrays.asList(-1, 2, 8), number2);
 
-    IntegerIncrementor.plusOne(number3);
+    IntegerIncrementer.plusOne(number3);
     Assert.assertEquals(Arrays.asList(-9, 9), number3);
   }
 
@@ -66,7 +66,7 @@ public class IntegerIncrementorTest {
   public void plusOne_Success_Zero() {
     List<Integer> number1 = Arrays.asList(0);
 
-    IntegerIncrementor.plusOne(number1);
+    IntegerIncrementer.plusOne(number1);
     Assert.assertEquals(Arrays.asList(1), number1);
   }
 }
